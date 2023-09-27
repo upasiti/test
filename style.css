@@ -1,0 +1,244 @@
+:root{
+    --color--1: #CB6564 ;
+    --color--2: #FFFBE4 ;
+}
+*{
+    margin: 0;
+    font-family: 'poppins';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+img{
+    width: 60px;
+}
+body{
+    min-height: 200vh;
+    background-color: var(--color--1);
+}
+
+header{
+    background-color: var(--color--2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color--1);
+    padding: 20PX;
+    position: fixed;
+    width: 100%;
+}
+header *{
+    color: var(--color--1);
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+.logo h1{
+    font-size: 20px;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+header ul .active{
+    font-weight: 600;
+}
+header .btn{
+    background-color: var(--color--1);
+    color: var(--color--2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+@media screen and (max-width:567px){
+    header .logo h1 {
+        display: none;
+    }
+    header a {
+        font-size: 11px;
+    }
+}
+/* SECTION 1 */
+.home{
+    padding-top: 100px;
+
+    background-color: var(--color--2);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home *{
+    color: var(--color--1);
+}
+.home img{
+    width: 60%;
+    object-fit: contain;
+}
+.home svg{
+    width: 15px;
+    stroke: var(--color--2);
+}
+.home .text-area h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+.home .text-area h1{
+    font-size: 54px;
+    width: 60%;
+}
+.home .text-area p{
+    width: 65%;
+    margin-bottom: 20px;
+}
+.home .text-area a{
+    background-color: var(--color--1);
+}
+.home .text-area span{
+    color: var(--color--2);
+    background-color: var(--color--1);
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 25px ;
+
+}
+/* SECTION 2 */
+.Features .text-area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Features .text-area *{
+    color: var(--color--2);
+}
+.Features .text-area h4{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.Features .text-area h1{
+    font-size: 54px;
+    width: 60%;
+}
+.Features .text-area p{
+    width: 65%;
+}
+/* CARDS */
+.Features{
+    padding: 20px;
+}
+.Features .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 19%;
+    margin-top: 20px;
+    justify-content: center;
+}
+.Features .cards .card {
+    background-color: var(--color--2);
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+}
+.Features .card h5{
+    font-size: 20px;
+    color: var(--color--1);
+}
+.Features .card p{
+    font-size: 14px;
+    color: var(--color--1);
+}
+
+/* contact */
+.contact {
+    margin-top: 50px;
+    display: grid;
+    padding-bottom: 80px;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.contact .contact-left {
+    grid-column: 2/6;
+    color: var(--color--2);
+}
+.contact .contact-left h4 {
+    font-size: 25px;
+
+}
+.contact form{
+    grid-column: 7/12;
+}
+.contact form input::placeholder
+.contact form textarea::placeholder
+{
+    color: var(--color--2);
+}
+.contact form input,
+.contact form textarea
+{
+    background-color: transparent;
+    border: unset;
+    border: 1px solid var(--color--2);
+    color: var(--color--2);
+    width: 80%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.contact form svg{
+    width: 20px;
+}
+.contact form button{
+    background-color: var(--color--2);
+    border: unset;
+    padding: 10px 15px;
+    color: var(--color--1);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; gap:5px;
+}
+/* footer */
+footer{
+    background-color: var(--color--2);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+}
+
+footer .footer-left,
+.footer-right *{
+    color: var(--color--1);
+}
+
+.footer-right{
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3,220px   );
+    align-items: center;
+
+}
+.sosial-media img{
+    width: 20px;
+    object-fit: contain;
+}
+footer ul{
+    padding: unset;
+}
